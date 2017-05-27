@@ -19,7 +19,7 @@
     ("ff7625ad8aa2615eae96d6b4469fcc7d3d20b2e1ebc63b761a349bebbb9d23cb" default)))
  '(package-selected-packages
    (quote
-    (alchemist elixir-mode exec-path-from-shell intero hindent haskell-mode python-mode rainbow-delimiters evil-easymotion powerline-evil evil-ediff neotree evil-anzu ahungry-theme dracula-theme evil-tabs evil evil-leader))))
+    (dashboard alchemist elixir-mode exec-path-from-shell intero hindent haskell-mode python-mode rainbow-delimiters evil-easymotion powerline-evil evil-ediff neotree evil-anzu ahungry-theme dracula-theme evil-tabs evil evil-leader))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -86,6 +86,12 @@
 
 ; ------------- Easymotion setup -------------
 (evilem-default-keybindings ",")
+
+; ------------- Dashboard setup -------------
+(require 'dashboard)
+(dashboard-setup-startup-hook)
+(setq dashboard-banner-logo-title "Welcome to Emacs - Morsicus")
+(setq dashboard-startup-banner "~/Images/emacs.png")
 
 ; ------------- General setup -------------
 ; Fullscreen on start (GUI)
